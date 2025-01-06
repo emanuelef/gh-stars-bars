@@ -1,11 +1,12 @@
 {
-  "name": "gh-bar-chart-race",
+  "name": "website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "vite --open",
     "lint": "eslint .",
     "preview": "vite preview"
   },
