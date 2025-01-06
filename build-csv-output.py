@@ -14,7 +14,7 @@ BASE_URL = "https://emafuma.mywire.org:8090/allStarsCsv?repo={repo}"
 
 def fetch_repo_data(repo_name):
     """Fetch the CSV data for a given repository."""
-    url = BASE_URL.format(repo=repo_name)
+    url = BASE_URL.format(repo=repo_name.lower())
     response = requests.get(url)
     if response.status_code == 200:
         return response.text

@@ -9,9 +9,10 @@ function App() {
     dataUrl: "./output.csv",
     autorun: true,
     labelsPosition: "outside",
-    tickDuration: 100,
+    tickDuration: 200,
     theme: 'dark',
     highlightBars: true,
+    topN: 19,
   };
 
   return (
