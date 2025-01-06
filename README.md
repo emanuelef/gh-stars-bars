@@ -1,3 +1,5 @@
+# GH Stars Bar Race
+
 ## Disclaimer
 
 This bar chart animation is intended as a fun and insightful visualization of trends in GitHub repositories. The **star count** is used as an indicator of a repository's **trendiness**, rather than as a measure of its usefulness or quality.
