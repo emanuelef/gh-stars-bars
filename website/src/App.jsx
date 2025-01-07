@@ -11,7 +11,7 @@ function App() {
     theme: 'dark',
     highlightBars: true,
     topN: 25,
-    labelsWidth: 420,
+    labelsWidth: 400,
     selectBars: true,
     title: "Top Starred Repositories on GitHub",
     marginTop: 20,
