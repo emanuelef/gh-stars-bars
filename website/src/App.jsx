@@ -15,13 +15,16 @@ function App() {
     selectBars: true,
     title: "Top Starred Repositories on GitHub",
     marginTop: 20,
-    subTitle: 'contact me to add more repos',
+    subTitle: 'Contact me to add more repos',
+    height: 'window',
   };
 
   return (
     <>
-      <div>
-        <RacingBars {...options}>Loading...</RacingBars>
+      <div className="AppContainer">
+        <div className="OtherContainer">
+          <RacingBars {...options}>Loading...</RacingBars>
+        </div>
       </div>
     </>
   )

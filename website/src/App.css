@@ -1,3 +1,4 @@
+/* Base containers should propagate full height and width */
 body,
 html,
 #root {
@@ -8,18 +9,29 @@ html,
   overflow: hidden;
 }
 
-div {
+/* AppContainer should occupy the entire screen */
+.AppContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-grow: 1;
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.OtherContainer {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* RacingBars should fill the container completely */
 .RacingBars {
   flex-grow: 1;
-  height: calc(100% - 20px);
-  width: calc(100% - 20px);
-  margin: 10px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
