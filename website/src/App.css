@@ -19,11 +19,7 @@ div {
 .RacingBars {
   flex-grow: 1;
   height: calc(100% - 20px);
-  /* Adjust for vertical margins */
   width: calc(100% - 20px);
-  /* Adjust for horizontal margins */
   margin: 10px;
-  /* Adds margin around the component */
   box-sizing: border-box;
-  /* Ensures padding/margin adjustments don't break layout */
 }

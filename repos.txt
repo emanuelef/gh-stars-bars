@@ -97,3 +97,4 @@ ossu/computer-science
 snailclimb/javaguide
 electron/electron
 fortawesome/font-awesome
+jquery/jquery-ui

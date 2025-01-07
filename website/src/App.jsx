@@ -3,8 +3,6 @@ import RacingBars from "racing-bars/react";
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   const options = {
     dataUrl: "./output.csv",
     autorun: true,
@@ -12,7 +10,12 @@ function App() {
     tickDuration: 200,
     theme: 'dark',
     highlightBars: true,
-    topN: 19,
+    topN: 25,
+    labelsWidth: 420,
+    selectBars: true,
+    title: "Top Starred Repositories on GitHub",
+    marginTop: 20,
+    subTitle: 'contact me to add more repos',
   };
 
   return (
