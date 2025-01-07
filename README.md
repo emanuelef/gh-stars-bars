@@ -8,4 +8,4 @@ While the animation highlights trends and demonstrates how new tools constantly 
 
 Ultimately, this visualization is designed to offer some interesting insights and, above all, to be an enjoyable exploration of GitHub trends.
 
-<img width="1490" alt="Screenshot 2025-01-06 at 21 16 59" src="https://github.com/user-attachments/assets/1273d1ff-ee4e-49fa-b387-e5cd85b4c485" />
+<img width="1488" alt="Screenshot 2025-01-07 at 20 10 28" src="https://github.com/user-attachments/assets/75f6c25d-b421-4118-b968-edaebb65b46c" />
