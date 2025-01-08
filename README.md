@@ -1,7 +1,13 @@
 # GH Stars Bars
 
-Available [here](https://emanuelef.github.io/gh-stars-bars/)
+Check it out [here](https://emanuelef.github.io/gh-stars-bars/)!   
+This project is just for fun, showing a bar chart race of the top-starred GitHub repositories. It’s more about exploring trends and looking back at what was popular than trying to define the “best” repos based on stars.  
+Currently, the chart includes some of the most starred repositories today, but I plan to expand it by incorporating more historical data from past years to capture a broader picture of GitHub trends over time.  
 
+## Tools Used
+
+Data collected using [Daily Stars Explorer](https://github.com/emanuelef/daily-stars-explorer).  
+For the rendering I used [Racing Bars](https://github.com/hatemhosny/racing-bars).  
 
 ## Disclaimer
 
