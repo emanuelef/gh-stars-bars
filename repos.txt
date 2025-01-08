@@ -14,3 +14,7 @@ sass/sass
 less/less
 git/git
 lodash/lodash
+prototypejs/prototype
+cakephp/cakephp
+homebrew/brew
+puppetlabs/puppet
