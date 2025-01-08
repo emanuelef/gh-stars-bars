@@ -17,6 +17,7 @@ function App() {
     marginTop: 20,
     subTitle: 'Contact me to add more repos',
     height: 'window',
+    endDate: '2024-12-31',
   };
 
   return (
