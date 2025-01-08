@@ -10,7 +10,7 @@ function App() {
     tickDuration: 200,
     theme: 'dark',
     highlightBars: true,
-    topN: 25,
+    topN: 30,
     labelsWidth: 400,
     selectBars: true,
     title: "Top Starred Repositories on GitHub",
