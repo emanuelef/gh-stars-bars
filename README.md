@@ -1,5 +1,8 @@
 # GH Stars Bars
 
+Available [here](https://emanuelef.github.io/gh-stars-bars/)
+
+
 ## Disclaimer
 
 This bar chart animation is intended as a fun and insightful visualization of trends in GitHub repositories. The **star count** is used as an indicator of a repository's **trendiness**, rather than as a measure of its usefulness or quality.
@@ -8,4 +11,4 @@ While the animation highlights trends and demonstrates how new tools constantly 
 
 Ultimately, this visualization is designed to offer some interesting insights and, above all, to be an enjoyable exploration of GitHub trends.
 
-<img width="1488" alt="Screenshot 2025-01-07 at 20 10 28" src="https://github.com/user-attachments/assets/75f6c25d-b421-4118-b968-edaebb65b46c" />
+<img width="1487" alt="Screenshot 2025-01-08 at 09 18 13" src="https://github.com/user-attachments/assets/319259b7-dc30-49d8-9f91-1bbc8e433f33" />
