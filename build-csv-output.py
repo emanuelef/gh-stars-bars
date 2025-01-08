@@ -26,16 +26,16 @@ def fetch_repo_data(repo_name):
 def process_csv_data(csv_data, repo_name):
     """Process the CSV data to aggregate total stars by month."""
     # Read CSV data into a pandas DataFrame
-    df = pd.read_csv(
-        io.StringIO(csv_data), parse_dates=["date"], dayfirst=True
-    )  # Use io.StringIO here
+    df = pd.read_csv(io.StringIO(csv_data), parse_dates=["date"], dayfirst=True)
     df["month"] = df["date"].dt.to_period("M")  # Extract the month
 
     # Group by month and take the last total-stars value for each month
     monthly_totals = df.groupby("month")["total-stars"].last().reset_index()
-    monthly_totals["date"] = monthly_totals[
-        "month"
-    ].dt.to_timestamp() + pd.offsets.MonthBegin(1)
+
+    # Use the last day of the month
+    monthly_totals["date"] = monthly_totals["month"].dt.to_timestamp(
+        "M"
+    )  # Last day of the month
     monthly_totals["name"] = repo_name
     monthly_totals = monthly_totals.rename(columns={"total-stars": "value"})
     return monthly_totals[["date", "name", "value"]]

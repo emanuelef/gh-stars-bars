@@ -1,4 +1,4 @@
-# GH Stars Bar Race
+# GH Stars Bars
 
 ## Disclaimer
 
