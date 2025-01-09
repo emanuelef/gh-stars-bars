@@ -29,3 +29,4 @@ junit-team/junit4
 spring-projects/spring-framework
 numpy/numpy
 sintaxi/phonegap
+capistrano/capistrano
