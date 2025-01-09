@@ -65,3 +65,8 @@ ruby-git/ruby-git
 wycats/merb-core
 defunkt/exception_logger
 vanpelt/jsawesome
+shopify/liquid
+automatic1111/stable-diffusion-webui
+jlevy/the-art-of-command-line
+trimstray/the-book-of-secret-knowledge
+jackfrued/Python-100-Days
