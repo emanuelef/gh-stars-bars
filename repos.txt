@@ -60,3 +60,8 @@ collectiveidea/awesome_nested_set
 mojombo/god
 macournoyer/thin
 technoweenie/restful-authentication
+mojombo/grit
+ruby-git/ruby-git
+wycats/merb-core
+defunkt/exception_logger
+vanpelt/jsawesome
