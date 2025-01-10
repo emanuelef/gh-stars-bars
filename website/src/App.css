@@ -39,3 +39,10 @@ html,
 #race text.label {
   cursor: pointer;
 }
+
+.GitHubButtonContainer {
+  position: absolute;
+  top: 30px;
+  right: 200px;
+  z-index: 1000; /* Ensure it appears above other elements */
+}

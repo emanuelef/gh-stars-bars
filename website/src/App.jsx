@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import RacingBars from "racing-bars/react";
+import GitHubButton from "react-github-btn";
 import "./App.css";
 
 function App() {
@@ -49,6 +50,17 @@ function App() {
 
   return (
     <div className="AppContainer">
+      {/* GitHub Button positioned at the top-right */}
+      <div className="GitHubButtonContainer">
+        <GitHubButton
+          href="https://github.com/emanuelef/gh-stars-bars"
+          data-color-scheme="no-preference: dark; light: dark_dimmed; dark: dark_high_contrast;"
+          data-size="small"
+          aria-label="Star emanuelef/gh-stars-bars on GitHub"
+        >
+          GitHub Repo
+        </GitHubButton>
+      </div>
       {/* Use ref to attach to the container */}
       <div ref={raceContainerRef} id="race" className="OtherContainer">
         <RacingBars {...options}>Loading...</RacingBars>
