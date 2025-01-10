@@ -16,10 +16,13 @@ function App() {
     labelsWidth: 400,
     selectBars: true,
     title: "Top Starred Repositories on GitHub",
-    marginTop: 20,
     subTitle: "Contact me to add more repos",
     height: "window",
     endDate: "2024-12-31",
+    marginTop: 20,
+    marginBottom: 10,
+    marginRight: 10,
+    marginLeft: 10,
   };
 
   useEffect(() => {
