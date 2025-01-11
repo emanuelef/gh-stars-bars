@@ -5,14 +5,16 @@ import "./App.css";
 
 function App() {
   const raceContainerRef = useRef(null); // Reference to the race container
-  const [options, setOptions] = useState({
+
+  // Determine initial options based on screen size
+  const initialOptions = {
     dataUrl: "./output.csv",
     autorun: true,
-    labelsPosition: "outside",
+    labelsPosition: window.innerWidth <= 768 ? "inside" : "outside",
     tickDuration: 200,
     theme: "dark",
     highlightBars: true,
-    topN: 30,
+    topN: window.innerWidth <= 768 ? 10 : 30,
     labelsWidth: 400,
     selectBars: true,
     title: "Top Starred Repositories on GitHub",
@@ -23,7 +25,9 @@ function App() {
     marginBottom: 10,
     marginRight: 10,
     marginLeft: 10,
-  });
+  };
+
+  const [options, setOptions] = useState(initialOptions);
 
   useEffect(() => {
     const updateOptionsForScreenSize = () => {
@@ -43,9 +47,6 @@ function App() {
         }));
       }
     };
-
-    // Initial check
-    updateOptionsForScreenSize();
 
     // Add event listener to handle screen resize
     window.addEventListener("resize", updateOptionsForScreenSize);
