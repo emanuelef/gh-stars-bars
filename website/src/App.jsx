@@ -1,12 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import RacingBars from "racing-bars/react";
 import GitHubButton from "react-github-btn";
 import "./App.css";
 
 function App() {
   const raceContainerRef = useRef(null); // Reference to the race container
-
-  const options = {
+  const [options, setOptions] = useState({
     dataUrl: "./output.csv",
     autorun: true,
     labelsPosition: "outside",
@@ -24,7 +23,38 @@ function App() {
     marginBottom: 10,
     marginRight: 10,
     marginLeft: 10,
-  };
+  });
+
+  useEffect(() => {
+    const updateOptionsForScreenSize = () => {
+      if (window.innerWidth <= 768) {
+        // Adjust options for mobile or low-resolution screens
+        setOptions((prevOptions) => ({
+          ...prevOptions,
+          labelsPosition: "inside",
+          topN: 10,
+        }));
+      } else {
+        // Restore options for larger screens
+        setOptions((prevOptions) => ({
+          ...prevOptions,
+          labelsPosition: "outside",
+          topN: 30,
+        }));
+      }
+    };
+
+    // Initial check
+    updateOptionsForScreenSize();
+
+    // Add event listener to handle screen resize
+    window.addEventListener("resize", updateOptionsForScreenSize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", updateOptionsForScreenSize);
+    };
+  }, []);
 
   useEffect(() => {
     const container = raceContainerRef.current;
