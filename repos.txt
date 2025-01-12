@@ -79,3 +79,11 @@ prawnpdf/prawn
 minimagick/minimagick
 twitter-archive/kestrel
 jmettraux/rufus-scheduler
+phusion/passenger
+mbleigh/acts-as-taggable-on
+sferik/twitter-ruby
+programming-nu/nu
+tobi/delayed_job
+lsegal/yard
+actsasparanoid/acts_as_paranoid
+bborn/communityengine
