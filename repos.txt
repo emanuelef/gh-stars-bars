@@ -87,3 +87,9 @@ tobi/delayed_job
 lsegal/yard
 actsasparanoid/acts_as_paranoid
 bborn/communityengine
+bower/bower
+moment/moment
+tastejs/todomvc
+dotcloud/docker
+impress/impress.js
+nwjs/nw.js
