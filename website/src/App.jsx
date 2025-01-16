@@ -3,6 +3,32 @@ import RacingBars from "racing-bars/react";
 import GitHubButton from "react-github-btn";
 import "./App.css";
 
+const toExclude = [
+  "freecodecamp/freecodecamp",
+  "ebookfoundation/free-programming-books",
+  "sindresorhus/awesome",
+  "996icu/996.icu",
+  "public-apis/public-apis",
+  "codecrafters-io/build-your-own-x",
+  "vinta/awesome-python",
+  "awesome-selfhosted/awesome-selfhosted",
+  "getify/you-dont-know-js",
+  "thealgorithms/python",
+  "cyc2018/cs-notes",
+  "trekhleb/javascript-algorithms",
+  "practical-tutorials/project-based-learning",
+  "jwasham/coding-interview-university",
+  "kamranahmedse/developer-roadmap",
+  "donnemartin/system-design-primer",
+  "github/gitignore",
+  "ossu/computer-science",
+  "jackfrued/Python-100-Days",
+  "jlevy/the-art-of-command-line",
+  "trimstray/the-book-of-secret-knowledge",
+  "snailclimb/javaguide",
+  "airbnb/javascript"
+];
+
 function App() {
   const raceContainerRef = useRef(null); // Reference to the race container
 
@@ -25,6 +51,8 @@ function App() {
     marginBottom: 10,
     marginRight: 10,
     marginLeft: 10,
+    dataTransform: (data) =>
+      data.filter((d) => !toExclude.includes(d.name)),
   };
 
   const [options, setOptions] = useState(initialOptions);
